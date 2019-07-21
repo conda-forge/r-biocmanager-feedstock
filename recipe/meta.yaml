@@ -15,7 +15,7 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 1001
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,6 +42,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - bgruening
     - daler
     - jdblischak
