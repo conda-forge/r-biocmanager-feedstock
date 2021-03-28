@@ -1,3 +1,5 @@
+cdt_name:
+- cos6
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -5,7 +7,7 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 docker_image:
-- condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-comp7
 pin_run_as_build:
   r-base:
     min_pin: x.x
@@ -14,3 +16,6 @@ r_base:
 - '3.6'
 target_platform:
 - linux-64
+zip_keys:
+- - cdt_name
+  - docker_image
