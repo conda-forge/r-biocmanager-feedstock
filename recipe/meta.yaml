@@ -1,4 +1,4 @@
-{% set version = "1.30.10" %}
+{% set version = "1.30.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BiocManager_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BiocManager/BiocManager_{{ version }}.tar.gz
-  sha256: f3b7a412b42be0ab8df5fcd9bf981876ba9e5c55bc5faaca7af7ede3b6d0c90e
+  sha256: c36108c1d1f3bee1c7ac513714f0c5a75c8417f39b0d69553583dd00d4b74a30
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,7 +39,7 @@ about:
   summary: A convenient tool to install and update Bioconductor packages.
   license_family: OTHER
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
 
 extra:
   recipe-maintainers:
