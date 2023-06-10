@@ -1,11 +1,11 @@
-About r-biocmanager
-===================
+About r-biocmanager-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biocmanager-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=BiocManager
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biocmanager-feedstock/blob/main/LICENSE.txt)
 
 Summary: A convenient tool to install and update Bioconductor packages.
 
