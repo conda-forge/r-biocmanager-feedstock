@@ -1,4 +1,4 @@
-{% set version = "1.30.21.1" %}
+{% set version = "1.30.22" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BiocManager_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BiocManager/BiocManager_{{ version }}.tar.gz
-  sha256: b2744dbce05ff0660ce68ef9a372db0377acf3548efc5975422206fb55b0c086
+  sha256: 5389c9c0d6562b0757659fb8262ab51b48225c4ba7e9acd4f5e7c0049735e835
 
 build:
   merge_build_host: true  # [win]
