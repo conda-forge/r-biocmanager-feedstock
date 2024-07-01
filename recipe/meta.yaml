@@ -1,6 +1,5 @@
 {% set version = "1.30.23" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-biocmanager
@@ -13,8 +12,7 @@ source:
   sha256: f7b45dbc49c97b2e6ec4b96ec1d472c6f1a5ad9bc0f933eea4c3ebc90dd8f34c
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
