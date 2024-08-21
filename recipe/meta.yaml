@@ -1,4 +1,4 @@
-{% set version = "1.30.23" %}
+{% set version = "1.30.24" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BiocManager_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BiocManager/BiocManager_{{ version }}.tar.gz
-  sha256: f7b45dbc49c97b2e6ec4b96ec1d472c6f1a5ad9bc0f933eea4c3ebc90dd8f34c
+  sha256: 645c423bb144dbd476cb308678bd36e06c1a3494115f157166dd3f59955ec7d1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
